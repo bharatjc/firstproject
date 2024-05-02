@@ -38,7 +38,10 @@ nav a:hover {
   align-items: center;
 }
 .other-nav i {
-  padding-left: 10px;
+  padding-left: 11px;
+}
+.other-nav #menu{
+  display: none;
 }
 .dis-section {
   height: 425px;
@@ -161,21 +164,21 @@ nav a:hover {
 }
 
 .footer{
-  height: 380px;
+  height: 330px;
   width: 100%;
-  padding: 20px 12% 5px 10%;
+  padding: 35px 10% 0 10%;
   background-color: #F2F2F2;
 }
 .innerfoot{
-  height: 240px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   column-gap: 8px;
-    margin-bottom: 15px; 
+  margin-bottom: 15px; 
 }
  
 ul p{
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #616161;
   margin-bottom: 20px;
@@ -183,9 +186,9 @@ ul p{
 ul a{
   width: ;
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   color: #616161;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-decoration: none;
 }
 
@@ -196,7 +199,7 @@ ul a{
   display: flex;
   align-items: center;
   color: #616161;
-  font-size: 12px;
+  font-size: 10px;
 }
 .left{
   height: 25px;
@@ -219,23 +222,64 @@ ul a{
     color: #616161;
   }
   /* Media_query */
+   @media (max-width: 700px) {
+    .footer{
+      padding: 20px 4% 5px 4%;
+      background-color: #F2F2F2;
+    }
+  }
+
+
+
   @media (max-width: 620px){
     .xbox-info {
       padding: 25px 0 0 30px;
     }  
+.footer{
+  height: 680px;
+  width: 100%;
+}
+.innerfoot{
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.outerfoot{
+  height: 100px;
+  padding: 20px 0;
+}
   }
+
+
+@media (max-width: 590px) {
+  nav{
+    display: none;
+  }
+ .other-nav #menu{
+  display: inline;
+ }
+  .footer{
+    height: 1230px;
+    width: 100%;
+  }
+  .innerfoot{
+    height: 1100px;
+  }
+  .outerfoot{
+    height: 100px;
+    padding: 20px 0;
+  }
+}
+
 @media (max-width: 480px){
   .xbox-info {
     padding: 50px 0 0 30px;
     width: 100%;
   }
-
   .xbox-info p {
-
     display: none;
-
   }
-
 }
 
 
