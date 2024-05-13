@@ -40,7 +40,7 @@ nav a:hover {
 .other-nav i {
   padding-left: 11px;
 }
-.other-nav #menu{
+.other-nav .menu{
   display: none;
 }
 .dis-section {
@@ -251,12 +251,24 @@ ul a{
 }
   }
 
+  .ham-menu.show a{
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+  }
 
-@media (max-width: 590px) {
+  .ham-menu.hide{
+    display: none;
+  }
+
+@media (max-width: 595px) {
   nav{
     display: none;
   }
- .other-nav #menu{
+ .other-nav .menu{
   display: inline;
  }
   .footer{
